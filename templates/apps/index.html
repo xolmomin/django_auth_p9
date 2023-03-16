@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+<h3>Asosiy page</h3>
+
+{% if user.is_authenticated %}
+    Login qilingan ✅ - {{ user.phone }}
+{% else %}
+    Login qilmagan ❌
+{% endif %}
+
+</body>
+</html>
